@@ -17,13 +17,12 @@ nav {
 
   .navbar-links {
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style: none;
   }
 
   .nav-link {
-    padding: 1rem;
+    padding: .5rem;
     color: #464646;
     font-weight: bold;
     text-decoration: none;
@@ -76,5 +75,49 @@ button {
     font-family: inherit;
     background-color: $primary-color;
     cursor: pointer;
+    color: white;
+}
+
+
+header {
+    height: 100px;
+}
+
+
+#main-top {
+    height: 350px;
+}
+
+#main-bottom {
+    background-color: #1c1c1c;
+    padding: 2rem 0;
+
+}
+
+#blue {
+    height: 150px;
+    background-color: $primary-color;
+}
+
+#gray {
+    height: 100px;
+    background-color: $secondary-color;
+}
+
+footer {
+    height: 350px;
+    // background-image: url(/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    min-width: 50%;
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h1 {
     color: white;
 }
