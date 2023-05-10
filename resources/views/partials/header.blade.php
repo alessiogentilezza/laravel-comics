@@ -3,10 +3,8 @@
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" />
     </div>
     <!-- LINK NAVBAR -->
+
     <ul class="navbar-links">
-        {{-- @foreach ($links as $link)
-        <a class="nav-link" href="#"> {{$link['text']}}</a>
-        @endforeach --}}
         <li class="nav-link">CHARACTERS</li>
         <li class="nav-link">COMICS</li>
         <li class="nav-link">MOVIES</li>

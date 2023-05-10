@@ -48,3 +48,33 @@ nav {
     color: $primary-color;
 
   }
+
+//CARDS
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .box {
+        width: calc(100% / 6);
+    }
+}
+
+.current {
+    position: absolute;
+    top: 330px;
+    left: 135px;
+    z-index: 10;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 3rem;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: $primary-color;
+    cursor: pointer;
+    color: white;
+}

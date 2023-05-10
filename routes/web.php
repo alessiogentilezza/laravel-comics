@@ -18,8 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('header', function () {
-    $links = config('navbar');
-    dd($links);
-    return view('header', compact('links'));
-})->name('header');
+Route::get('cards', function () {
+    $cards = config('comics');
+    return view('cards', compact('cards'));
+})->name('cards');
