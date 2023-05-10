@@ -1,1 +1,50 @@
 @import '~bootstrap/scss/bootstrap';
+@import 'resources/scss/partials/_variables.scss';
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand {
+    padding: 0.5rem;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    color: #464646;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+  }
+
+  .border-b {
+    border-bottom: $primary-color 2px solid;
+    // position: relative;
+    // top: 35px;
+    display: none;
+  }
+
+  .nav-link:hover .border-b {
+    display: block;
+
+  }
+
+  .nav-link:hover {
+    color: $primary-color;
+
+  }

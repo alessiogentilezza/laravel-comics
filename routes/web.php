@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+
+Route::get('header', function () {
+    $links = config('navbar');
+    dd($links);
+    return view('header', compact('links'));
+})->name('header');
