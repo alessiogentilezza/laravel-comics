@@ -1,24 +1,21 @@
-<nav class="container">
+<nav class="container d-flex">
     <div class="brand">
-      <!-- LOGO NAVBAR -->
-      <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt=""/>
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" />
     </div>
     <!-- LINK NAVBAR -->
-
-
     <ul class="navbar-links">
-        @foreach ($links as $link)
+        {{-- @foreach ($links as $link)
         <a class="nav-link" href="#"> {{$link['text']}}</a>
-
-        @endforeach
-
-
-
-        {{-- <li v-for="(link, i) in navLinks" :key="i">
-            <a class="nav-link" :href="link.href">
-            {{ link.text }}
-            <div class="border-b"></div>
-            </a>
-        </li> --}}
+        @endforeach --}}
+        <li class="nav-link">CHARACTERS</li>
+        <li class="nav-link">COMICS</li>
+        <li class="nav-link">MOVIES</li>
+        <li class="nav-link">TV</li>
+        <li class="nav-link">GAMES</li>
+        <li class="nav-link">VIDEOS</li>
+        <li class="nav-link">FANS</li>
+        <li class="nav-link">NEWS</li>
+        <li class="nav-link">COLLECTIBLES</li>
+        <li class="nav-link">SHOP</li>
     </ul>
-  </nav>
+</nav>
