@@ -5,8 +5,6 @@
 @section('content')
 
     <div id="main-top">
-        <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}"/>
     </div>
-
-
-@endsection
+@include('cards');
+    @endsection

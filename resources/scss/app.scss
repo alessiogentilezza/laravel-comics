@@ -1,62 +1,60 @@
-@import '~bootstrap/scss/bootstrap';
-@import 'resources/scss/partials/_variables.scss';
+@import "~bootstrap/scss/bootstrap";
+@import "resources/scss/partials/_variables.scss";
 
 nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .brand {
+.brand {
     padding: 0.5rem;
-  }
+}
 
-  img {
+img {
     height: 100%;
-  }
+}
 
-  .navbar-links {
+.navbar-links {
     display: flex;
     align-items: center;
     list-style: none;
-  }
+}
 
-  .nav-link {
-    padding: .5rem;
+.nav-link {
+    padding: 0.5rem;
     color: #464646;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
+}
 
-  }
-
-  .border-b {
+.border-b {
     border-bottom: $primary-color 2px solid;
     // position: relative;
     // top: 35px;
     display: none;
-  }
+}
 
-  .nav-link:hover .border-b {
+.nav-link:hover .border-b {
     display: block;
+}
 
-  }
-
-  .nav-link:hover {
+.nav-link:hover {
     color: $primary-color;
-
-  }
+}
 
 //CARDS
 
-  .cards {
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 1rem 0;
 
     & .box {
-        width: calc(100% / 6);
+        width: calc(100% / 4);
     }
 }
 
@@ -78,20 +76,20 @@ button {
     color: white;
 }
 
-
 header {
     height: 100px;
 }
 
-
 #main-top {
     height: 350px;
+    background-image: url(/resources/img/jumbotron.jpg);
+    background-color: $secondary-color;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #main-bottom {
     background-color: #1c1c1c;
-    padding: 2rem 0;
-
 }
 
 #blue {

@@ -14,11 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $cards = config('comics');
+    return view('home', compact('cards'));
 })->name('home');
 
 
 Route::get('cards', function () {
     $cards = config('comics');
-    return view('cards', compact('cards'));
+    return view('home', compact('cards'));
 })->name('cards');
