@@ -17,24 +17,30 @@ img {
 
 .navbar-links {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    & p {
+        font-size: 0.8rem;
+        margin: 0;
+        padding-top: 0.5rem;
+    }
 }
 
 .nav-link {
-    padding: 0.5rem;
+    padding: 0 1rem;
     color: #464646;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
-}
 
-.border-b {
-    border-bottom: $primary-color 2px solid;
-    // position: relative;
-    // top: 35px;
-    display: none;
+    & img {
+        height: 50px;
+    }
 }
 
 .nav-link:hover .border-b {
@@ -44,17 +50,24 @@ img {
 .nav-link:hover {
     color: $primary-color;
 }
+.blue-banner {
+    height: 100px;
+    background-color: $primary-color;
+}
 
 //CARDS
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem 0;
+    margin: 1rem;
 
     & .box {
-        width: calc(100% / 4);
+        width: calc(100% / 5 - 1rem);
+        margin: 0 0.5rem;
+    }
+    & img {
+        height: 300px;
     }
 }
 
@@ -110,6 +123,7 @@ footer {
 }
 
 .container {
+    height: 100%;
     min-width: 50%;
     width: 80%;
     margin: 0 auto;
